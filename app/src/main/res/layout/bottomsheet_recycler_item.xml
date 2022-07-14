@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bottom_sheet_item_btn"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/subs_act_btn_height"
+        android:background="@drawable/sub_service_btn_background"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:layout_margin="@dimen/start_margin_from_parent"
+        android:text="@string/subscription_act_prepaid_meter"
+        android:textColor="@color/black"
+        android:textSize="@dimen/textSize_medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:layoutDirection="rtl"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include
+            android:id="@+id/request_service_toolbar"
+            layout="@layout/activites_toobar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/_10sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/request_service_toolbar">
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/request_date_title_tv"
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_requestDate_et_layout"
+
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_requestDate_et"
+                        android:hint="@string/et_date_hint"
+                        android:gravity="right"
+                        android:enabled="false"
+                        android:textSize="@dimen/textSize_medium"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:textColorHint="@color/et_hint_color"
+                        android:padding="@dimen/request_service_et_padding"
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/applicant_title_tv"
+                    android:textSize="@dimen/textSize_medium" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_applicant_spn_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:errorIconDrawable="@null"
+
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="match_parent"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_applicant_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_down_arrow"
+                        android:focusable="false"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:hint="@string/choose_applicant_et_hint"
+                        android:inputType="none"
+                        android:padding="@dimen/request_service_et_padding"
+                        android:paddingHorizontal="@dimen/request_service_et_padding"
+                        android:textColor="@color/black"
+
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/textSize_medium"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/card_id_number_title_tv"
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_cardIdNumber_et_layout"
+
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_cardIdNumber_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:hint=   "@string/write_card_id_number_et_hint"
+                        android:inputType="number"
+
+                        android:padding="@dimen/request_service_et_padding"
+                        android:textColorHint="@color/et_hint_color"
+                        android:textSize="@dimen/textSize_medium"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/name_of_applicant_title"
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_applicantName_et_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_applicantName_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:hint="@string/applicant_name_et_hint"
+                        android:inputType="text"
+                        android:padding="@dimen/request_service_et_padding"
+                        android:textColorHint="@color/et_hint_color"
+                        android:textSize="@dimen/textSize_medium"
+                        tools:ignore="TextContrastCheck" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/applicant_job_spn_title"
+                    android:textSize="@dimen/textSize_medium" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_applicant_job_spn_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:errorIconDrawable="@null"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_applicant_job_spn"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:drawableLeft="@drawable/ic_down_arrow"
+                        android:focusable="false"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:hint="@string/choose_applicant_job_spn_title"
+                        android:inputType="none"
+                        android:padding="@dimen/request_service_et_padding"
+                        android:paddingHorizontal="@dimen/request_service_et_padding"
+                        android:textColor="@color/black"
+
+                        android:textColorHint="@color/black"
+                        android:textSize="@dimen/textSize_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/phone_number_title_tv"
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_phoneNumber_et_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_phoneNumber_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/request_service_et_height"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:gravity="right|center"
+                        android:hint="@string/write_phone_number_et_hint"
+                        android:inputType="phone"
+                        android:padding="@dimen/request_service_et_padding"
+                        android:textColorHint="@color/et_hint_color"
+                        android:textSize="@dimen/textSize_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/nearest_landmark_title_tv"
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_nearest_landmark_et_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_nearest_landmark_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:hint="@string/nearest_landmark_et_hint"
+                        android:padding="@dimen/request_service_et_padding"
+
+                        android:inputType="text"
+                        android:textColorHint="@color/et_hint_color"
+                        android:textSize="@dimen/textSize_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/request_service_title_tv_startMargin"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/notes_title_tv"
+                    android:layout_marginTop="@dimen/request_service_formElements_topMargin"
+
+                    android:textSize="@dimen/textSize_medium" />
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/request_service_notes_et_layout"
+                    android:layout_width="match_parent"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:hintTextColor="@color/et_hint_color"
+                    app:hintEnabled="false"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/request_service_notes_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:gravity="top"
+                        android:minHeight="@dimen/request_service_notes_et_height"
+                        android:hint="@string/write_notes_et_hint"
+                        android:inputType="textMultiLine"
+                        android:padding="@dimen/request_service_et_padding"
+                        android:textColorHint="@color/et_hint_color"
+                        android:textSize="@dimen/textSize_medium" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/request_service_btn_next"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/request_service_et_height"
+                    android:layout_weight="2"
+                    android:background="@drawable/main_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/req_act_btn_next"
+                    android:textColor="@color/white" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/request_service_btn_reset"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/request_service_btn_height"
+                    android:layout_marginStart="@dimen/_7sdp"
+                    android:layout_weight="1"
+                    android:background="@drawable/secondary_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/reset_form"
+                    android:textColor="@color/secondary_btn_text_color"
+                     />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/primary"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="@+id/linearLayout"
+            app:layout_constraintStart_toStartOf="@+id/linearLayout"
+            app:layout_constraintTop_toTopOf="@+id/linearLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

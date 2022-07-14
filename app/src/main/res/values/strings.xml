@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">AlistApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="applicant_for_self">شخصي</string>
+    <string name="applicant_for_agent">وكيل</string>
+    <string name="applicant_for_delegate">مفوض</string>
+    <string name="document_type_spn_title">نوع الوثيقة</string>
+
+
+    <string name="request_date_title_tv">* تاريخ تقديم الطلب</string>
+    <string name="applicant_title_tv">* مقدم الطلب</string>
+    <string name="choose_applicant_et_hint">اختر مقدم الطلب</string>
+    <string name="card_id_number_title_tv">* الرقم التعريفي للوثيقة</string>
+    <string name="write_card_id_number_et_hint">اكتب الرقم التعريفي للوثيقة</string>
+    <string name="name_of_applicant_title">* اسم مقدم الطلب</string>
+    <string name="applicant_job_spn_title">* مهنة مقدم الطلب</string>
+    <string name="choose_applicant_job_spn_title">اختر مهنة مقدم الطلب</string>
+    <string name="applicant_name_title_tv">* اسم مقدم الطلب</string>
+    <string name="applicant_name_et_hint">محمد احمد</string>
+    <string name="passport">جواز سفر</string>
+    <string name="identification">هوية</string>
+    <string name="identification_card">هوية</string>
+    <string name="phone_number_title_tv">* رقم المحمول </string>
+    <string name="write_phone_number_et_hint"> اكتب رقم المحمول </string>
+    <string name="nearest_landmark_title_tv">* اقرب معلم</string>
+    <string name="nearest_landmark_et_hint">اكتب اقرب معلم</string>
+    <string name="notes_title_tv">* ملاحظات</string>
+    <string name="write_notes_et_hint">اكتب ملاحظات</string>
+    <string name="et_date_hint">dd/mm/yy</string>
+    <string name="req_act_btn_next">التالي</string>
+    <string name="reset_form">إعادة تعيين</string>
+    <string name="this_field_required_toast">هذا الحقل مطلوب</string>
+
+
+    <string name="newSub_prepaidMeter">عداد مسبق الدفع</string>
+    <string name="newSub_mechanicalMeter">عداد ميكانيكي</string>
+    <string name="newSub_smartMeter">عداد ذكي</string>
+    <string name="edit_sub_changeBeneficiary">تغيير منتفع</string>
+    <string name="edit_sub_editConnectionType">تتعديل نوع الربط</string>
+    <string name="edit_sub_editName">تغيير اسم / تنازل</string>
+    <string name="edit_sub_editSubscriberRating">تعديل تصنيف المشترك</string>
+    <string name="active_sub_stopSubscription">إيقاف مؤقت اشتراك عادي</string>
+    <string name="active_sub_stopDamagedSubscription">إيقاف مؤقت متضرر</string>
+    <string name="active_sub_ultimatesStopSubscription">إيقاف نهائي اشتراك عادي</string>
+    <string name="active_sub_ultimatesStopDamagedSubscription">إيقاف نهائي متضرر</string>
+    <string name="active_sub_activeSubscription">تفعيل اشتراك عادي</string>
+    <string name="active_sub_activeDamagedSubscription">تفعيل اشتراك عادي</string>
+    <string name="moveOrEnlarge_sub_moveSub">نقل اشتراك من موقع لآخر</string>
+    <string name="moveOrEnlarge_sub_enLargeSub">تكبير اشتراك</string>
+    <string name="moveOrEnlarge_sub_moveCounterInSame">نقل عداد في نفس العقار</string>
+    <string name="moveOrEnlarge_sub_moveSubToAntherPlace">نقل اشتراك من مقر لآخر</string>
+    <string name="edit_counter_prepaidToSmartCounter">تغيير عداد مسبق دفع لعداد ذكي</string>
+    <string name="edit_counter_prepaidToPrepaidCounter">تغيير عداد مسبق دفع لعداد مسبق دفع</string>
+    <string name="edit_counter_prepaidToMechanicalCounter">تغيير عداد مسبق دفع لعداد ميكانيكي</string>
+    <string name="edit_counter_mechanicalToMechanicalCounter">تغيير عداد ميكانيكي لعداد ميكانيكي</string>
+    <string name="edit_counter_mechanicalToSmartCounter">تغيير عداد ميكانيكي لعداد ذكي</string>
+    <string name="edit_counter_mechanicalToPrepaidCounter">تغيير عداد ميكانيكي لعداد مسبق دفع</string>
+    <string name="edit_counter_smartToSmartCounter">تغيير عداد ذكي لعداد ذكي</string>
+    <string name="edit_counter_smartToPrepaidCounter">تغيير عداد ذكي لعداد مسبق دفع</string>
+    <string name="inspection_tran_counterStamp">ختم عداد</string>
+    <string name="inspection_tran_counterCheck">فحص عداد</string>
+    <string name="financial_tran_fillOutSurvey">تعبئة استبيان</string>
+    <string name="financial_tran_stopDeduction">ايقاف استقطاع</string>
+    <string name="financial_tran_pauseDeduction">تعليق استقطاع</string>
+    <string name="financial_tran_updateSurvey">تحديث استبيان</string>
+    <string name="financial_tran_addAutomaticPayment">اضافة سداد آلي</string>
+    <string name="financial_tran_stopAutomaticPayment">ايقاف سداد آلي</string>
+    <string name="financial_tran_discountReply">رد خصم</string>
+    <string name="financial_tran_addDeduction">اضافة استقطاع</string>
+    <string name="financial_tran_transferDues">تحويل مستحقات</string>
+    <string name="financial_tran_requestDistributeServices">طلب توزيع خدمات مشتركة</string>
+    <string name="financial_tran_editAutomaticPayment">تعديل سداد آلي</string>
+    <string name="financial_tran_transformationPrepaidBoost">تحويل دفعة مسبقة من اشتراك لآخر</string>
+    <string name="financial_tran_returnPaymentToMinistryOfFinance">ارجاع دفعة مسبقة لوزارة مالية رام الله</string>
+    <string name="financial_tran_removePause">فك تعليق</string>
+    <string name="financial_tran_transferDuesToRam">تحويل مستحقات موظف غزة لاشتراك رام الله</string>
+    <string name="financial_tran_returnPrepaidTOGaza">ارجاع دفعة مسبقة لوزارة مالية حكومة غزة</string>
+
+
+    <string name="message_sendRequestDone">تم ارسال طلب خدمة</string>
+    <string name="message_sendRequestFail">فشل ارسال طلب خدمة</string>
+    <string name="message_cannot_set_date_inFuture">لايمكن وضع تاريخ في المستقبل</string>
+    <string name="message_write_date_correctly">قم بكتابة التاريخ بشكل صحيح</string>
+    <string name="message_this_field_required">هذا الحقل مطلوب</string>
+    <string name="message_sendRequest_fail_checkInternet">فشل ارسال الطلب , تاكد من الاتصال بالانترنت</string>
+    <string name="message_applied_filter_fail_check_internet">فشل تطبيق الفلتر تاكد من الاتصال بالانترنت</string>
+
+    <string name="simple_date_pattern">dd/MM/yyyy</string>
+
+
+
+    <string name="trn_name">اسم المعاملة</string>
+    <string name="trnAct_transaction_number">رقم الخدمة</string>
+    <string name="trnAct_trn_name">اسم المعاملة</string>
+    <string name="trnAct_transaction_request_date">تاريخ الطلب</string>
+    <string name="tenAct_state">الحالة</string>
+
+
+    <string name="services_act_how_request_tran">مشاهدة آلية طلب معاملة</string>
+    <string name="services_act_newsub">اشترك جديد</string>
+    <string name="services_act_edit_sub">تعديل بيانات اشتراك</string>
+    <string name="services_act_active_sub">تفعيل / ايقاف اشتراك</string>
+    <string name="services_act_movieOrEnlarge_sub">تكبير/نقل الاشتراك</string>
+    <string name="services_act_edit_counter">تغيير عداد</string>
+    <string name="services_act_inspection_tran">معاملات تفتيش </string>
+    <string name="services_act_Financial_tran">معاملات مالية</string>
+    <string name="services_act_toolbar_title">طلب الخدمة</string>
+
+
+    <string name="subscription_act_toolbar_title">اشتراك جديد</string>
+    <string name="subscription_act_prepaid_meter">عداد مسبق الدفع</string>
+    <string name="subscription_act_mechanical_meter">عداد ميكانيكي</string>
+    <string name="subscription_act_smart_meter">عداد ذكي</string>
+
+    <string name="service_request_act_toolbar_title">نموذج طلب خدمة</string>
+
+
+    <string name="transaction_act_title">ارشيف المعاملات</string>
+
+
+    <string name="filter">فلترة</string>
+    <string name="service_type">نوع الخدمة</string>
+    <string name="start_date">من تاريخ</string>
+    <string name="end_date">الى تاريخ</string>
+    <string name="transaction_state_cancled">ملغي</string>
+    <string name="transaction_state_done">تم التنفيذ</string>
+    <string name="network_connection_lost"> تم فقدان الاتصال بالانترنت</string>
+    <string name="transaction_rate">تقييم</string>
+    <string name="transaction_empty_list">قائمة العمليات فارغة</string>
+
+
+</resources>

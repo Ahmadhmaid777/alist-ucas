@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingVertical="@dimen/_3sdp"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@drawable/sub_service_btn_background"
+        android:gravity="right|center"
+        android:foreground="?android:attr/selectableItemBackground"
+
+        android:layout_height="@dimen/services_act_btn_height"
+        >
+        <TextView
+            android:id="@+id/service_item_name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/textSize_medium"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:fontFamily="@font/droid_arabic_kufi"
+
+            android:text="@string/services_act_how_request_tran"
+            android:layout_height="wrap_content"/>
+        <ImageView
+            android:id="@+id/service_item_image"
+            android:layout_width="@dimen/_26sdp"
+            android:src="@drawable/ic_watching_tv"
+            android:layout_marginRight="@dimen/_20sdp"
+            android:layout_height="@dimen/_26sdp"/>
+
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="textSize_small">@dimen/_10ssp</dimen>
+    <dimen name="textSize_medium">@dimen/_12ssp</dimen>
+    <dimen name="textSize_large">@dimen/_16ssp</dimen>
+
+    <dimen name="medium_icon_size">@dimen/_16sdp</dimen>
+    <dimen name="large_icon_size">@dimen/_28sdp</dimen>
+
+    <dimen name="request_service_title_tv_startMargin">@dimen/_8sdp</dimen>
+    <dimen name="request_service_et_padding">@dimen/_10sdp</dimen>
+    <dimen name="request_service_et_height">@dimen/_45sdp</dimen>
+    <dimen name="request_service_notes_et_height">@dimen/_86sdp</dimen>
+    <dimen name="request_service_spn_height">@dimen/_43sdp</dimen>
+    <dimen name="request_service_formElements_topMargin">@dimen/_5sdp</dimen>
+    <dimen name="request_service_formElements_bottomMargin">@dimen/_1sdp</dimen>
+    <dimen name="request_service_btn_height">@dimen/_43sdp</dimen>
+
+
+    <dimen name="transaction_item_tv_padding">10dp</dimen>
+    <dimen name="transaction_item_margin">@dimen/_12sdp</dimen>
+
+
+    <dimen name="portrait_video_height">@dimen/_250sdp</dimen>
+
+
+    <dimen name="services_act_btn_height">@dimen/_65sdp</dimen>
+    <dimen name="services_act_padding">@dimen/_12sdp</dimen>
+    <dimen name="services_act_text_startPadding">@dimen/_12sdp</dimen>
+    <dimen name="services_act_btn_rightPadding">@dimen/_20sdp</dimen>
+    <dimen name="services_act_btn_topMargin">@dimen/_10sdp</dimen>
+    <dimen name="services_act_rec_padding">@dimen/_10sdp</dimen>
+    <dimen name="services_act_rec_topMargin">@dimen/_5sdp</dimen>
+
+    <dimen name="subs_act_btn_height">@dimen/_65sdp</dimen>
+    <dimen name="subs_act_btn_topMargin">@dimen/_8sdp</dimen>
+
+    <dimen name="bottom_sheet_title_topMargin">@dimen/_16sdp</dimen>
+    <dimen name="filter_bottom_sheet_close_icon_size">@dimen/_16sdp</dimen>
+    <dimen name="bottomsheet_recycler_topMargin">@dimen/_8sdp</dimen>
+    <dimen name="bottom_sheet_rec_maxHeight">@dimen/_100sdp</dimen>
+
+    <dimen name="rate_btn_height">@dimen/_60sdp</dimen>
+    <dimen name="rate_btn_width">@dimen/_30sdp</dimen>
+
+    <dimen name="toolbar_filter_liftMargin">@dimen/_10sdp</dimen>
+    <dimen name="filter_bottom_sheet_elements_topMargin">@dimen/_7sdp</dimen>
+    <dimen name="start_margin_from_parent">@dimen/_12sdp</dimen>
+    <dimen name="end_margin_from_parent">@dimen/_12sdp</dimen>
+    <dimen name="transaction_item_cv_topMargin">@dimen/_12sdp</dimen>
+    <dimen name="filter_bottom_sheet_padding">@dimen/_16sdp</dimen>
+    <dimen name="textInputLayout_radius">@dimen/_7sdp</dimen>
+
+
+</resources>

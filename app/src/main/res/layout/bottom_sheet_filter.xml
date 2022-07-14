@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+
+    tools:context=".fragments.FilterBottomSheet">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/filter_bottom_sheet_padding"
+        android:clipToOutline="true">
+
+        <TextView
+            android:id="@+id/filter_bottom_sheet_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/droid_arabic_kufi"
+            android:text="@string/filter"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/filter_bottom_sheet_close_img"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/ic_close"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:gravity="right"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/filter_bottom_sheet_title_tv"
+            app:layout_constraintVertical_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droid_arabic_kufi"
+                android:text="@string/service_type"
+                android:textSize="@dimen/textSize_medium" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filter_bottom_sheet_elements_topMargin"
+                android:gravity="right"
+
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_editSub_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/services_act_edit_sub"
+
+                        android:textSize="@dimen/textSize_medium" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_newSub_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/services_act_newsub"
+
+                        android:textSize="@dimen/textSize_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_enlargeOrMoveSub_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/services_act_movieOrEnlarge_sub"
+                        android:textSize="@dimen/textSize_medium"
+
+                        />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_activeSub_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_8sdp"
+                        android:text="@string/services_act_active_sub"
+
+                        android:textSize="@dimen/textSize_medium" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:orientation="horizontal">
+
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_inspectionTran_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/services_act_inspection_tran"
+
+                        android:textSize="@dimen/textSize_medium" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/filter_sheet_editCounter_btn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_5sdp"
+                        android:background="@drawable/filter_selector_btn_background"
+                        android:fontFamily="@font/droid_arabic_kufi"
+                        android:paddingHorizontal="@dimen/_10sdp"
+                        android:text="@string/services_act_edit_counter"
+
+                        android:textSize="@dimen/textSize_medium" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_sheet_financialTran_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:background="@drawable/filter_selector_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:paddingHorizontal="@dimen/_10sdp"
+                    android:text="@string/services_act_Financial_tran"
+
+                    android:textSize="@dimen/textSize_medium" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:text="@string/end_date"
+                    android:textSize="@dimen/textSize_medium" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/droid_arabic_kufi"
+
+                    android:text="@string/start_date"
+                    android:textSize="@dimen/textSize_medium" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/filter_bottom_sheet_elements_topMargin"
+                android:gravity="end">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filter_sheet_endDate_et_layout"
+
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="@dimen/_5sdp"
+
+
+                    android:hint="@string/end_date"
+
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopStart="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:endIconDrawable="@drawable/ic_date_icon"
+                    app:errorIconDrawable="@null"
+
+                    app:hintTextColor="@color/et_hint_color"
+                    app:startIconDrawable="@drawable/ic_date_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/filter_sheet_endDate_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+
+                        android:focusable="false"
+                        android:inputType="none" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/filter_sheet_startDate_et_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:hint="@string/start_date"
+                    app:boxBackgroundColor="@color/color_gray_light"
+                    app:boxCornerRadiusBottomEnd="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusBottomStart="@dimen/textInputLayout_radius"
+                    app:boxCornerRadiusTopEnd="@dimen/textInputLayout_radius"
+                    app:boxStrokeColor="@color/text_input_layout_stroke_color"
+                    app:endIconDrawable="@drawable/ic_date_icon"
+                    app:errorIconDrawable="@null"
+                    app:hintTextColor="@color/et_hint_color"
+
+
+                    app:startIconDrawable="@drawable/ic_date_icon">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/filter_sheet_startDate_et"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:textDirection="rtl" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/droid_arabic_kufi"
+                android:text="@string/tenAct_state"
+                android:layout_marginTop="@dimen/filter_bottom_sheet_elements_topMargin"
+                android:textSize="@dimen/textSize_medium" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_marginTop="@dimen/filter_bottom_sheet_elements_topMargin"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_sheet_doneState_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/filter_selector_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/transaction_state_done"
+                    android:textSize="@dimen/textSize_medium"
+
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_sheet_cancelState_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="@dimen/_110sdp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_5sdp"
+                    android:background="@drawable/filter_selector_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/transaction_state_cancled"
+                    android:textSize="@dimen/textSize_medium"
+
+                    />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_sheet_filter_resetFilter"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/_5sdp"
+                    android:layout_weight="2"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/reset_form"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/textSize_small" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/filter_sheet_filter_btn"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:background="@drawable/main_btn_background"
+                    android:fontFamily="@font/droid_arabic_kufi"
+                    android:foreground="?android:attr/selectableItemBackground"
+                    android:text="@string/filter"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textSize_medium" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>
